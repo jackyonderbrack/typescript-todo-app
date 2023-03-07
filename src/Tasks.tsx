@@ -11,10 +11,38 @@ export const Tasks = () => {
         fetch(API_URL)
             .then((res) => res.json())
             .then((data) => setTasks(data))
-    }, [])
+    }, []);
+
+    const addTask = async (title: string) => {
+        const newTask: Task = {
+            id: tasks.length + 1,
+            title,
+            completed: false,
+        };
+
+        const res = await fetch(API_URL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newTask),
+        });
+
+        if (res.ok) {
+            const data = await res.json();
+            setTasks([...tasks, data]);
+        }
+    };
+
+
 
   return (
-    <div>Tasks</div>
+    <div>
+        <h2>To-Do List</h2>
+        <ul>
+            
+        </ul>
+    </div>
   )
 }
 
