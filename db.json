@@ -1,9 +1,10 @@
 {
-    "tasks": [
-        {
-            "id": 1,
-            "title": "zadanie pierwsze",
-            "completed": false
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "title": "zadanie pierwsze",
+      "completed": false
+    }
+   
+  ]
 }
