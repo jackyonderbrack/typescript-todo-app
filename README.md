@@ -4,8 +4,8 @@ In the project directory, you should run:
 
 ### `npm run json-server`
 
-Dependencies will watch db.json file, witch includes list data.
-Server will run on [http://localhost:3001/tasks]
+Dependencies will watch db.json file, witch includes list data.\
+Server will run on [http://localhost:3001/tasks](http://localhost:3001/tasks)\
 By using application we run GET, PUT, POST and DELETE methods on database.
 
 ### `npm start`
