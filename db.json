@@ -2,9 +2,13 @@
   "tasks": [
     {
       "id": 1,
-      "title": "zadanie pierwsze",
+      "title": "zadanie 1",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "zadanie 2",
       "completed": false
     }
-   
   ]
 }
